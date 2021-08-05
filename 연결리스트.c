@@ -15,6 +15,7 @@ int main(void) {
 	Node* node2 = (Node*)malloc(sizeof(Node));
 	node2->data = 2;
 	head->next = node1;
+	node1->next = node2;
 	node2->next = NULL;
 	Node* cur = head->next;
 	while (cur != NULL) {
