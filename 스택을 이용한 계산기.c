@@ -91,6 +91,7 @@ void calculate(Stack* stack, char** s, int size) {
 		if (!strcmp(s[i], "+") || !strcmp(s[i], "-") || !strcmp(s[i], "*") || !strcmp(s[i], "/")) {
 			x = atoi(pop(stack));
 			y = atoi(pop(stack));
+			// 문자열이었으니 숫자로 바꿔주기
 			if (!strcmp(s[i], "+")) z = y + x;
 			if (!strcmp(s[i], "-")) z = y - x;
 			if (!strcmp(s[i], "*")) z = y * x;
